@@ -29,7 +29,7 @@ public class ThemeparkCotroller {
     }
 
     @GetMapping("/themeparks/name/{name}")
-    public List<Themepark> getThemeparkByName(@PathVariable String name){
+    public List<Themepark> getThemeparksByName(@PathVariable String name){
         return themeparkRepository.findThemeparkByNameContaining(name);
     }
 
@@ -38,6 +38,9 @@ public class ThemeparkCotroller {
         return themeparkRepository.findThemeParkByThemeparkCode(themeparkCode);
     }
 
-
+    @GetMapping("/themeparks")
+    public List<Themepark> getThemeparks() {
+        return themeparkRepository.findAll();
+    }
 
 }
