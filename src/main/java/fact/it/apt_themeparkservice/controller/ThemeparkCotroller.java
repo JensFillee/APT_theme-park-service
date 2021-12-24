@@ -24,6 +24,7 @@ public class ThemeparkCotroller {
             themeparkRepository.save(new Themepark("1","Test themepark 1","straatlaan 2", 5000,"156545"));
             themeparkRepository.save(new Themepark("2","Test themepark 2","straatlaan 3", 5000,"156554"));
             themeparkRepository.save(new Themepark("3","bobbejaanland","straatlaan 4", 5000,"156884"));
+            themeparkRepository.save(new Themepark("4","walibi","nederlandlaan 12", 80000,"156888"));
 
         }
         System.out.println(themeparkRepository.findThemeParkByThemeparkCode("156545").getName());
