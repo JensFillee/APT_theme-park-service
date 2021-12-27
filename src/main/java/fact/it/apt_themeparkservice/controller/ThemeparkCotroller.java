@@ -26,9 +26,8 @@ public class ThemeparkCotroller {
             themeparkRepository.save(new Themepark("3","bobbejaanland","straatlaan 4", 5000,"156884"));
             themeparkRepository.save(new Themepark("4","walibi","nederlandlaan 12", 80000,"156888"));
             themeparkRepository.save(new Themepark("5","Disneyland","disneylandlaan 12", 100000,"156244"));
-
         }
-        System.out.println(themeparkRepository.findThemeParkByThemeparkCode("156545").getName());
+//        System.out.println(themeparkRepository.findThemeparkByThemeparkCode("156545").getName());
     }
 
     @GetMapping("/themeparks/name/{name}")
@@ -38,7 +37,7 @@ public class ThemeparkCotroller {
 
     @GetMapping("/themeparks/{themeparkCode}")
     public Themepark getThemeparkByThemeparkCode(@PathVariable String themeparkCode){
-        return themeparkRepository.findThemeParkByThemeparkCode(themeparkCode);
+        return themeparkRepository.findThemeparkByThemeparkCode(themeparkCode);
     }
 
     @GetMapping("/themeparks")

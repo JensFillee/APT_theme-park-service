@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface ThemeparkRepository extends MongoRepository<Themepark,String> {
-    Themepark findThemeParkByThemeparkCode(String Themeparkcode);
+    Themepark findThemeparkByThemeparkCode(String Themeparkcode);
     List<Themepark> findThemeparkByNameContaining(String name);
 }
