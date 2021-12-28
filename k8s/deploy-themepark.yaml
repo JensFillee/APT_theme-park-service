@@ -56,7 +56,7 @@ spec:
     spec:                     # Spec for the containers that will be run in the Pods
       containers:
       - name: themepark-service-server
-        image: miverboven/review-service-ex
+        image: jensfillee/theme-park-service
         imagePullPolicy: IfNotPresent
         ports:
           - name: http
