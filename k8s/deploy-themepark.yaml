@@ -80,7 +80,7 @@ metadata:
 spec:                         
   type: ClusterIP                 # Don't allow connections from outside the cluster
   selector:
-    app: themepark-service-server   # The service exposes Pods with label `app=review-service-server`
+    app: themepark-service-server   # The service exposes Pods with label `app=themepark-service-server`
   ports:                         # Forward incoming connections on port 8052 to the target port 8052
   - name: http
     port: 8052
