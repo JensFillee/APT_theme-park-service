@@ -14,7 +14,6 @@ public class ThemeparkModelTests {
         assertEquals("straatlaan 1",themepark.getAddress());
         assertEquals(5000,themepark.getCapacity());
         assertEquals("TP1",themepark.getThemeparkCode());
-
     }
 
     @Test
