@@ -47,9 +47,7 @@ public class ThemeparkRepositoryTests {
 
         assertThat(result).isNotNull().isNotEmpty();
         //vergelijk het eerste item uit de lijst
-//        assertThat(result.get(0)).usingRecursiveComparison().isEqualTo(themepark);
-        assertThat(result).usingRecursiveComparison().ignoringCollectionOrder().isEqualTo(themepark);
-
+        assertThat(result.get(0)).usingRecursiveComparison().isEqualTo(themepark);
     }
 
 
