@@ -58,7 +58,6 @@ spec:
       - name: themepark-service-server
         image: jensfillee/apt_theme-park-service
         imagePullPolicy: IfNotPresent
-        restartPolicy: Never
         ports:
           - name: http
             containerPort: 8052 # The port that the container exposes
