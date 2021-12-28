@@ -63,8 +63,8 @@ spec:
             containerPort: 8052 # The port that the container exposes
         resources:
           limits:
-            cpu: 0.2
-            memory: "200Mi"
+            cpu: 0.4
+            memory: "400Mi"
         env:                    # Environment variables supplied to the Pod
         - name: MONGODB_HOST
           value: "themepark-service-mongo"
