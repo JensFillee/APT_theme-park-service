@@ -56,7 +56,7 @@ spec:
     spec:                     # Spec for the containers that will be run in the Pods
       containers:
       - name: themepark-service-server
-        image: ${{ secrets.DOCKER_USER }}/apt_theme-park-service:latest
+        image: jensfillee/apt_theme-park-service:latest
         imagePullPolicy: Always
         ports:
           - name: http
